@@ -5,6 +5,7 @@ import org.bukkit.Bukkit;
 import org.bukkit.plugin.PluginManager;
 import org.bukkit.plugin.java.JavaPlugin;
 
+import java.sql.Connection;
 import java.sql.PreparedStatement;
 
 public abstract class KublikPlugin extends JavaPlugin {
@@ -18,5 +19,5 @@ public abstract class KublikPlugin extends JavaPlugin {
 
     public abstract Text getText();
 
-    public abstract WrappedStatement create(PreparedStatement sql);
+    public abstract WrappedStatement create(Connection connection, String sql);
 }

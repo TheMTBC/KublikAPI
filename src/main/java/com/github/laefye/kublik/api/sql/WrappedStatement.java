@@ -4,6 +4,7 @@ public abstract class WrappedStatement {
     public abstract WrappedStatement setString(String value);
     public abstract WrappedStatement setLong(long value);
     public abstract WrappedStatement setInt(int value);
+    public abstract WrappedStatement setBoolean(boolean value);
     public abstract void execute();
-    public abstract WrappendQueryResult executeQuery();
+    public abstract WrappedQueryResult executeQuery();
 }
